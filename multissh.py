@@ -386,8 +386,9 @@ class MultiSSH:
         thread = threading.Thread(target=SSHSession,name=hostname,kwargs=kwargs)
         thread.daemon = False
         thread.start()
-        kwargs['thread'] = thread
-        self.hosts[hostname] = kwargs
+        host = copy(kwargs)
+        host['thread'] = thread
+        self.hosts[hostname] = host
 
     def get_hosts(self):
         '''
