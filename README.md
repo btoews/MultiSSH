@@ -11,7 +11,7 @@ Once you have launched it, type `help` to see the available commands.
 
 ##Commands##
 Here are the contents of the help command:
-    ==Help==
+
     Welcome to MultiSSH. Usage is pretty simple. You can set
     parameters with the 'set' command, add values to parameter
     lists with the 'add' command, inspect current settings
