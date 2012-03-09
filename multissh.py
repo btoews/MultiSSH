@@ -441,24 +441,24 @@ class UI():
         self.config = {\
             'hosts': {\
                 'description':'The hosts that we will be trying to connect to',\
-                'value':['bean','ansible.neohapsis.com']},\
+                'value':[]},\
             'port': {\
                 'description':'The port on the hosts that we will connect to.',\
-                'value':2222},\
+                'value':22},\
             'usernames': {\
                 'description':'The usernames that we are going to try to connect with',\
-                'value':['mastahyeti','btoews']},\
+                'value':[]},\
             'passwords': {\
                 'description':'The passwords that we are going to try to connect with',\
                 'value':[]},\
             'rsa_keyfiles': {\
-                'description':'RSA keys that we can try to connect with',\
-                'value':['/home/btoews/.ssh/id_rsa']},\
-            'command_batch': {\
-                'description':'batch of commands to be run with the `run` command',\
+                'description':'RSA key files that we can try to connect with',\
                 'value':[]},\
             'dsa_keyfiles': {\
-                'description':'DSA keys that we can try to connect with',\
+                'description':'DSA key files that we can try to connect with',\
+                'value':[]},\
+            'command_batch': {\
+                'description':'batch of commands to be run with the `run` command',\
                 'value':[]}}
         
         #parse the functions in this class to figure out command names and descriptions
@@ -567,9 +567,9 @@ class UI():
             self = globals()["__tmp_self__"]
             del(globals()["__tmp_self__"])
             del(globals()["__tmp_mystring__"])
+            self._sync_configs()
         except:
             print "Something went wrong. Bad syntax probably. You should be using Python syntax."
-        self._sync_configs()
         return True
     
     def get(self,string):
