@@ -2,13 +2,8 @@
 # coding: utf-8
 
 """
-    A pure python ping implementation using raw sockets.
-
-    Note that ICMP messages can only be send from processes running as root
-    (in Windows, you must run this script as 'Administrator').
-
-    Bugs are naturally mine. I'd be glad to hear about them. There are
-    certainly word - size dependencies here.
+    I ripped this off of jedie. I only needed this file, so I didn't actually fork.
+    This is heavily modified by @mastahyeti. Here are the original credits though:
     
     :homepage: https://github.com/jedie/python-ping/
     :copyleft: 1989-2011 by the python-ping team, see AUTHORS for more details.
