@@ -7,12 +7,13 @@ this is a tool for running multiple SSH connections at the same time. This appli
 
 Required:
 
-    -python2.7   -- Weird bugs in 2.6. Haven't tried 3.0
-    -paramiko    -- SSH Library in pure python
+- python2.7   -- Weird bugs in 2.6. Haven't tried 3.0
+- paramiko    -- SSH Library in pure python
 
 Optional:
 
-    -scapy       -- Packet crafting. allows me to syn scan hosts before trying to connect (make sure they're live...)
+- scapy       -- Packet crafting. allows me to syn scan hosts before trying to connect (make sure they're live...)
+    
 ##Usage:##
 To start MultiSSH, type:
     sudo python ./multissh.py
