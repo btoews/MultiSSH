@@ -3,6 +3,11 @@
 @mastahyeti
 ##Description:##
 this is a tool for running multiple SSH connections at the same time. This application works best if run as root. It also works best if you have scapy installed. That beings said, it can work without either of those requirements.
+##Dependencies##
+Required:
+    paramiko    -- SSH Library in pure python
+Optional:
+    scapy       -- Packet crafting. allows me to syn scan hosts before trying to connect (make sure they're live...)
 ##Usage:##
 To start MultiSSH, type:
     sudo python ./multissh.py
